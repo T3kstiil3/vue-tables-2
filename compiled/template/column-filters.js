@@ -9,6 +9,7 @@ module.exports = function (h, that) {
   var textFilter = require('./text-filter')(h, that);
   var dateFilter = require('./date-filter')(h, that);
   var listFilter = require('./list-filter')(h, that);
+  var checkboxFilter = require('./checkbox-filter')(h, that);
 
   var filters = [];
   var filter;
@@ -30,6 +31,8 @@ module.exports = function (h, that) {
           filter = dateFilter(column);break;
         case that.isListFilter(column):
           filter = listFilter(column);break;
+        case that.isCheckboxFilter(column):
+          filter = checkboxFilter(column);break;
       }
     } else {
       filter = '';

@@ -6,7 +6,7 @@ module.exports = function (column) {
 
       if (!this.sortable(column)) return;
 
-      if (column != this.orderBy.column) return cls;
+      if (column != this.orderBy.column) return cls + 'glyphicon-sort';
 
       cls += this.orderBy.ascending == 1 ? this.opts.sortIcon.up : this.opts.sortIcon.down;
 

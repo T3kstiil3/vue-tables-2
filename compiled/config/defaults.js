@@ -4,6 +4,7 @@ module.exports = function () {
   return {
     dateColumns: [],
     listColumns: {},
+    checkboxColumns: {},
     datepickerOptions: {
       locale: {
         cancelLabel: 'Clear'
