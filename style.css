@@ -15,3 +15,6 @@
     content: "-";
 }
 
+.VueTables__sortable {
+  cursor: pointer;
+}
